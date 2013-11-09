@@ -1,0 +1,182 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+
+     
+      android:id="@+id/tabhost"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true" >
+	  <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical" >
+
+          <TabWidget
+              android:id="@android:id/tabs"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+          </TabWidget>
+			
+          <FrameLayout
+              android:id="@android:id/tabcontent"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" >
+
+              <LinearLayout
+                  android:id="@+id/Gestion"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical" >
+
+                  <Spinner
+                      android:id="@+id/domaines"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                  />
+				<ListView 
+				   	android:id="@android:id/list" 
+				   	android:layout_width="match_parent"
+					android:layout_height="0dip"
+					android:layout_weight="1"
+				/>
+				<Button
+				    android:id="@+id/addDomaine"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="5dp"
+				    android:gravity="center_vertical|center_horizontal"
+				    android:text="@string/buttonAddDomaine"
+				    android:background="@color/greenclair"
+				    />
+				
+				<Button
+				    android:id="@+id/addTache"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="5dp"
+				    android:enabled="false"
+				    android:gravity="center_vertical|center_horizontal"
+				    android:text="@string/addTache"
+				    android:background="@color/greenclair"
+				  	 />
+              </LinearLayout>
+              <ScrollView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+	              <LinearLayout
+	                  android:id="@+id/Aide"
+	                  android:layout_width="match_parent"
+	                  android:layout_height="wrap_content"
+	                  android:orientation="vertical">
+					  <TextView
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:text="@string/aideCreationDomaine"
+				        android:textSize="20sp"
+				        android:layout_marginTop="10dp"
+				        android:layout_marginLeft="5dp"
+				        android:textStyle="bold"
+				        android:textIsSelectable="false"/>
+					  <TextView
+					    android:id="@+id/CreationDom"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="15dp"
+				        android:textIsSelectable="false"></TextView>
+					  <TextView
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:textStyle="bold"
+				        android:textSize="20sp"
+				        android:layout_marginLeft="5dp"
+				        android:text="@string/aideModifDomaine"
+				        android:textIsSelectable="false" />
+					  <TextView
+					    android:id="@+id/ModifDom"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="15dp"
+				        android:textIsSelectable="false"></TextView>
+				      
+					  <TextView
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:textStyle="bold"
+				        android:textSize="20sp"
+				        android:layout_marginLeft="5dp"
+				        android:text="@string/aideSupprDomaine"
+				        android:textIsSelectable="false" />
+					  <TextView
+					    android:id="@+id/SupprDom"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="15dp"
+				        android:textIsSelectable="false"></TextView>
+					  <TextView
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+						android:textSize="20sp"
+						android:layout_marginLeft="5dp"
+				        android:textStyle="bold"
+				        android:text="@string/aideCreationTache"
+				        android:textIsSelectable="false" />
+				      <TextView
+					    android:id="@+id/CreationTache"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="15dp"
+				        android:textIsSelectable="false"></TextView>
+					  <TextView
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:textStyle="bold"
+				        android:textSize="20sp"
+				        android:layout_marginLeft="5dp"
+				        android:text="@string/aideModifTache"
+				        android:textIsSelectable="false" />
+					  <TextView
+					    android:id="@+id/ModifTache"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="15dp"
+				        android:textIsSelectable="false"></TextView>
+					  <TextView
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:textStyle="bold"
+				        android:textSize="20sp"
+				        android:layout_marginLeft="5dp"
+				        android:text="@string/aideSupprTache"
+				        android:textIsSelectable="false" />
+					  <TextView
+					    android:id="@+id/SupprTache"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="15dp"
+				        android:textIsSelectable="false"></TextView>
+					  
+					  
+					  
+					  <TextView
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:textStyle="bold"
+				        android:textSize="20sp"
+				        android:layout_marginLeft="5dp"
+				        android:text="@string/aideRemiseZero"
+				        android:textIsSelectable="false" />
+					  <TextView
+					    android:id="@+id/remiseZero"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="15dp"
+				        android:textIsSelectable="false"></TextView>
+					  
+	              </LinearLayout>  
+	          </ScrollView>          
+          </FrameLayout>
+      </LinearLayout>
+</TabHost>

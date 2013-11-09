@@ -1,0 +1,46 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	
+	<TableLayout android:id="@+id/blocCheck" 
+		
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp">
+    	
+    	<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:paddingLeft="4sp"
+			android:baselineAligned="true">
+			
+			<LinearLayout
+				android:orientation="horizontal" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:paddingLeft="20sp"
+				android:layout_weight="1" 
+				android:layout_gravity="center_vertical">
+				
+				<TextView android:id="@+id/nomTache" 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:textSize="20sp"
+					android:layout_gravity="right"
+					android:textIsSelectable="false"
+				/>
+				
+			</LinearLayout>
+			
+			<CheckBox android:layout_height="wrap_content" 
+				android:id="@+id/check"
+				android:layout_width="wrap_content" 
+				android:layout_gravity="left"
+				android:layout_marginRight="10sp" 
+				android:onClick="MyHandler"
+			/>
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

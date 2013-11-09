@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/modifItemCurrent"
+          android:title="@string/modifDomaineMenu" />
+    <item android:id="@+id/deleteItemCurrent"
+          android:title="@string/deleteDomaineMenu" />
+    <item android:id="@+id/deleteAllItem"
+          android:title="@string/deleteAllMenu" />
+</menu>

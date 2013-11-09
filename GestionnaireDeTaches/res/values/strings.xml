@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GestionnaireDeTaches</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="addTache">Ajouter une tâche</string>
+    <string name="GestionTab">Gestion</string>
+    <string name="AideTab">Aide</string>
+    <string name="aideCreationDomaine">Creation Domaine</string>
+    <string name="aideCreationTache">Creation Tache</string>
+    <string name="aideSupprDomaine">Suppression Domaine</string>
+    <string name="aideSupprTache">Suppression Tache</string>
+    <string name="buttonAddDomaine">Ajouter un Domaine</string>
+    <string name="deleteDomaineMenu">Supprimer domaine courant</string>
+    <string name="deleteAllMenu">Remise à zéro</string>
+	<string name="modifDomaineMenu">Modifier nom domaine</string>
+	<string name="aideModifDomaine">Modification Domaine</string>
+	<string name="aideRemiseZero">Remise a Zero</string>
+	<string name="EditTache">Modification de tache</string>
+    <string name="DeleteTache">Suppression Tache</string>
+	<string name="aideModifTache">Modification Tache</string>
+</resources>
